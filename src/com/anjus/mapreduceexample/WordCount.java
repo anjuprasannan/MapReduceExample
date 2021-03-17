@@ -46,8 +46,8 @@ public class WordCount {
 	public static void main(String[] args) throws Exception {
 		System.setProperty("hadoop.home.dir", "C:\\Program Files\\hadoop\\hadoop-3.2.1");
 		Configuration conf = new Configuration();
-		String inputFileName = "D:\\anjus\\workspace\\MapReduce\\input\\input.txt";
-		String outputFolder = "D:\\anjus\\workspace\\MapReduce\\output";
+		String inputFileName = "C:\\Users\\kbipi\\eclipse-workspace\\MapReduceExample\\src\\main\\resources\\input\\input.txt";
+		String outputFolder ="C:\\Users\\kbipi\\eclipse-workspace\\MapReduceExample\\src\\main\\resources\\output";
 		@SuppressWarnings("deprecation")
 		Job job = new Job(conf, "word count");
 		job.setJarByClass(WordCount.class);
